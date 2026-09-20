@@ -13,7 +13,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background-image: url("../../assets/images/map_bg.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.301)),url("../../assets/images/map_bg.jpg");
         background-size: cover;
         background-position: center;
         filter: blur(8px) contrast(110%);
@@ -36,16 +36,21 @@
             font-size: 33px;
             font-weight: 300;
             color: $secondary-color;
+            line-height: 1;
+            .smaller {
+                font-size: 24px;
+            }
         }
 
         .address {
             font-size: 11px;
-            margin-bottom: 6%;
+            margin: 6% 0;
+            line-height: 1.5;
         }
 
         .map {
-            margin-bottom: 5%;
-            min-height: 218px;
+            margin: 5% 0;
+            min-height: 155px;
 
             img {
                 max-width: 286px;
@@ -92,7 +97,7 @@
         }
 
         .time-box {
-            width: 40%;
+            width: 57%;
 
             .timeline-item {
                 display: flex;
@@ -107,7 +112,7 @@
                     @include flex-center;
 
                     img {
-                        max-width: 15px;
+                        max-width: 20px;
                         width: 100%;
                         height: auto;
                     }
@@ -124,7 +129,7 @@
             .timeline-item:nth-child(2) {
                 .icon {
                     img {
-                        max-width: 20px;
+                        max-width: 28px;
                     }
                 }
             }
@@ -152,7 +157,7 @@
             }
 
             .map {
-                min-height: calc((218px / 500px) * 100vw);
+                min-height: calc((155px / 500px) * 100vw);
 
                 img {
                     max-width: calc((286 / 500) * 100vw);
@@ -176,13 +181,24 @@
             .time-box {
                 .timeline-item {
                     .icon {
-                        max-width: 4vw;
+                        img {
+                            max-width: calc((20px / 500px) * 100vw);
+                        }
                     }
 
                     .description {
-                        font-size: 2.7vw;
+                        font-size: calc((13.77 / 500) * 100vw);
                     }
                 }
+
+                .timeline-item:nth-child(2) {
+                    .icon {
+                        img {
+                            max-width: calc((28 / 500) * 100vw);
+                        }
+                    }
+                }
+
             }
         }
     }

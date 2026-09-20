@@ -526,7 +526,7 @@ header {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url("../../assets/images/map_bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.301)), url("../../assets/images/map_bg.jpg");
     background-size: cover;
     background-position: center;
     filter: blur(8px) contrast(110%);
@@ -545,13 +545,17 @@ header {
       margin-top: 12%;
       font-size: 33px;
       font-weight: 300;
-      color: #5a3a21ff; }
+      color: #5a3a21ff;
+      line-height: 1; }
+      .location .frame .location-name .smaller {
+        font-size: 24px; }
     .location .frame .address {
       font-size: 11px;
-      margin-bottom: 6%; }
+      margin: 6% 0;
+      line-height: 1.5; }
     .location .frame .map {
-      margin-bottom: 5%;
-      min-height: 218px; }
+      margin: 5% 0;
+      min-height: 155px; }
       .location .frame .map img {
         max-width: 286px;
         width: 100%;
@@ -583,7 +587,7 @@ header {
       color: #eeede8ff;
       margin-bottom: 5%; }
     .location .timeline .time-box {
-      width: 40%; }
+      width: 57%; }
       .location .timeline .time-box .timeline-item {
         display: flex;
         justify-content: center;
@@ -597,7 +601,7 @@ header {
           justify-content: center;
           align-items: center; }
           .location .timeline .time-box .timeline-item .icon img {
-            max-width: 15px;
+            max-width: 20px;
             width: 100%;
             height: auto; }
         .location .timeline .time-box .timeline-item .description {
@@ -606,7 +610,7 @@ header {
           color: #eeede8ff;
           text-align: left; }
       .location .timeline .time-box .timeline-item:nth-child(2) .icon img {
-        max-width: 20px; }
+        max-width: 28px; }
       .location .timeline .time-box .timeline-item:nth-child(3) .icon img {
         width: 55%; }
   @media (max-width: 500px) {
@@ -617,7 +621,7 @@ header {
       .location .frame .address {
         font-size: calc((11px / 500px) * 100vw); }
       .location .frame .map {
-        min-height: calc((218px / 500px) * 100vw); }
+        min-height: calc((155px / 500px) * 100vw); }
         .location .frame .map img {
           max-width: calc((286 / 500) * 100vw); }
       .location .frame .btn-map {
@@ -626,10 +630,12 @@ header {
       max-width: 7.6vw; }
     .location .timeline .title {
       font-size: 3.3vw; }
-    .location .timeline .time-box .timeline-item .icon {
-      max-width: 4vw; }
+    .location .timeline .time-box .timeline-item .icon img {
+      max-width: calc((20px / 500px) * 100vw); }
     .location .timeline .time-box .timeline-item .description {
-      font-size: 2.7vw; } }
+      font-size: calc((13.77 / 500) * 100vw); }
+    .location .timeline .time-box .timeline-item:nth-child(2) .icon img {
+      max-width: calc((28 / 500) * 100vw); } }
 
 @use "../variables" as *;
 @use "../mixins" as *;
@@ -704,7 +710,7 @@ header {
     padding: 0 10%;
     text-align: justify;
     text-align-last: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     line-height: 180%; }
   .photos .photo-grid {
     width: 100%;

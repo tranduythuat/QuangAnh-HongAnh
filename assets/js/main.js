@@ -663,7 +663,7 @@
       didOpen: () => Swal.showLoading(),
     });
 
-    const sheetURL = "https://script.google.com/macros/s/AKfycbwCYnZaes-cvyuHhIJPGo8Ca2ztghTWsy2KJtkJSw3SXvZ3PLQS0kBTdGwrVBGnzj13/exec?sheet=confirm";
+    const sheetURL = "https://script.google.com/macros/s/AKfycbyUrH7wT2DTcSft0ruy8rkQu13l_LwdRILNRXRS4D4xJ_2ZuPG_O5QcrhFX8I4Yd6o_/exec?sheet=nhatrai_confirm";
 
     try {
       const res = await fetch(sheetURL, {
