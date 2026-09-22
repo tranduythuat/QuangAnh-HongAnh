@@ -334,7 +334,7 @@ header {
 .letter-section .content {
   width: 100%;
   aspect-ratio: 500/1000;
-  background: url("../../assets/images/letter.jpg");
+  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/HongAnh-QuangAnh/letter.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -406,7 +406,7 @@ header {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../assets/images/invite_bg.webp");
+  background-image: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/HongAnh-QuangAnh/invite_bg.webp");
   background-size: cover;
   background-position: center;
   filter: blur(7px);
@@ -512,7 +512,7 @@ header {
   border-bottom: 35px solid #eeede8;
   width: 100%;
   height: 100%;
-  background: url("../../assets/images/couple_frm.webp") no-repeat 54% 31%/186%;
+  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/HongAnh-QuangAnh/couple_frm.webp") no-repeat 54% 31%/186%;
 }
 .couple .couple-photo .tape {
   position: absolute;
@@ -615,7 +615,7 @@ header {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.301)), url("../../assets/images/map_bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.301)), url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/HongAnh-QuangAnh/map_bg.jpg");
   background-size: cover;
   background-position: center;
   filter: blur(8px) contrast(110%);
@@ -915,7 +915,7 @@ header {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../assets/images/invite_bg.webp");
+  background-image: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/HongAnh-QuangAnh/invite_bg.webp");
   background-size: cover;
   background-position: center;
   filter: blur(6px);
